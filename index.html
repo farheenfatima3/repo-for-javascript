@@ -2,36 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana page</title>
+    <title>banana speak</title>
     <style>
-        textarea{
-            display:block;
-            height:20vh;
-            width:100%
+        textarea {
+            width: 100%;
+            height: 20vh;
+            display: block;
+            margin: auto;
         }
         button{
-            padding:0.5rem;
-           display:block;
-           margin:1rem;
-           width:20%;
-           border-radius:2rem;
-        }
-        #output{
-            border:1px solid black;
             display:block;
-            height:20vh;
-            width:100%
+            margin:1rem;
+            border-radius:2rem;
+            width:20%;
+            height:5vh;
+            background-color:yellow;
+        }
+
+        #output {
+            border: 1px solid black;
+            height: 20vh;
+            width: 100%;
+            margin: auto;
+        }
+        #backgrd-color{
+            background-color:yellow;
+            padding-bottom:6rem;
+        }
+        #mania{
+            padding-top:8rem;
+            background-color:yellow;
         }
     </style>
 </head>
+
 <body>
-    <h1>Banana game</h1>
-    <textarea placeholder="Enter the text here" id="translate-text" cols="30" rows="10"></textarea>
-    <button id="user-input">Translate</button>
-    <div style="font:size=larger"></div>
+    <h1 id="backgrd-color">Fun Translation Game</h1>
+    <textarea id="input-txt" placeholder="Enter the text here"></textarea>
+    <button id="translator-btn">Translator</button>
     <div id="output"></div>
     <script src="app.js" type="text/javascript"></script>
 </body>
+<footer>
+    <h1 id="mania">fun games unlimited</h1>
+</footer>
+
 </html>
